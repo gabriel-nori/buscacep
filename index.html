@@ -1,0 +1,24 @@
+<!doctype = HTML>
+<HTML>
+	<head>
+		<title>Buscar Cep</title>
+		<meta charset="UTF-8">
+		<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	</meta>
+	<body>
+		<div id="button">
+			<input type="text" placeholder="CEP" name="cep" id="cep">
+			<button onclick="buscarCEP($('#cep').val())">Buscar</button>
+		<div id="main">
+			<p> Logradouro: <span class="logradouro"></span></p>
+			<p> Complemento: <span class="complemento"></span></p>
+			<p> Bairro: <span class="bairro"></span></p>
+			<p> UF: <span class="uf"></span></p>
+			<p> Localidade: <span class="localidade"></span></p>
+			<p id="endereco"></p>
+		</div>
+	</body>
+<HTML>
